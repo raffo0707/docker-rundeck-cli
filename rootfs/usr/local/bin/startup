@@ -1,0 +1,7 @@
+#!/bin/sh
+
+addgroup -g ${GID} rundeck && adduser -h /home/rundeck -s /bin/sh -G rundeck -D -u ${UID} rundeck
+
+chown -R rundeck: /rundeck /home/rundeck
+
+exec su-exec rundeck:rundeck /sbin/tini -- java -jar /rundeck/bin/rundeck-cli.jar $@
