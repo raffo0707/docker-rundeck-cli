@@ -5,11 +5,13 @@ ARG RUNDECK_CLI_VER=1.0.22
 LABEL description="rundeck based on alpine" \
       tags="latest 1.0.22 1.0 1" \
       maintainer="xataz <https://github.com/xataz>" \
-      build_ver="2018020501"
+      build_ver="2018020901"
 
 ENV RD_URL=http://rundeck:4440 \
     RD_USER=user \
-    RD_PASSWORD=U53r
+    RD_PASSWORD=U53r \
+    UID=991 \
+    GID=991
 
 RUN BUILD_DEPS="wget" \
     && apk add -U openjdk8-jre \

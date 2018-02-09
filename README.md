@@ -39,10 +39,14 @@ docker build -t xataz/rundeck:1.0.22 --build-arg RUNDECK_VER=1.0.22 github.com/x
 
 ## Configuration
 ### Environments
+* UID
+* GID
 * RD_URL
 * RD_USER
 * RD_PASSWORD
 * RD_TOKEN
+
+Show https://rundeck.github.io/rundeck-cli/configuration/ for more environments variables
 
 
 
