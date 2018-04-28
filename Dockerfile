@@ -1,11 +1,11 @@
 FROM xataz/alpine:3.7
 
-ARG RUNDECK_CLI_VER=1.0.25
+ARG RUNDECK_CLI_VER=1.0.26
 
 LABEL description="rundeck based on alpine" \
-      tags="latest 1.0.25 1.0 1" \
+      tags="latest 1.0.26 1.0 1" \
       maintainer="xataz <https://github.com/xataz>" \
-      build_ver="201804190600"
+      build_ver="201804280600"
 
 ENV RD_URL=http://rundeck:4440 \
     RD_USER=user \
