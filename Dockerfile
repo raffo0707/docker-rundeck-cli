@@ -5,7 +5,7 @@ ARG RUNDECK_CLI_VER=1.0.27
 LABEL description="rundeck based on alpine" \
       tags="latest 1.0.27 1.0 1" \
       maintainer="xataz <https://github.com/xataz>" \
-      build_ver="201805290431"
+      build_ver="201806010431"
 
 ENV RD_URL=http://rundeck:4440 \
     RD_USER=user \
